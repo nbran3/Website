@@ -60,10 +60,8 @@
                     </header>
                     <p>Hello! I'm Noah Brannon, and I appreciate you taking the time to explore my portfolio. I graduated from the University of Michigan - Dearborn in December 2022, earning a degree in Economics and a minor in History.
                         Currently, I reside in Trenton, Michigan, which is located just 20 minutes south of Detroit. Ideally, I am looking for opportunities in Metro Detroit,
-                        but I am open to relocating within the United States. This portfolio showcases data projects, that I have utilized
-                        Python, SQL, MS Excel, data visualization tools like Tableau, and CI/CD tools like Docker and Terraform for use in data analysis, data engineering, and machine learning. The majority of these projects revolve around the realms of economics and finance,
-as those are the areas in which I feel most confident and adept.
-                        Last updated 1/31/2025.</p>
+                        but I am open to relocating within the United States.
+                        Last updated 2/22/2025.</p>
                 </div>
             </div>
         </section>
@@ -77,24 +75,22 @@ as those are the areas in which I feel most confident and adept.
             </header>
             <ul class="features">
                 <li>
-                    <span class="image"><img src="images/images.jpg" alt="" /></span>
-                    <h3>Housing Prices Forecasting</h3>
-                    <p>This machine learning project uses economic data to predict real estate price movements. The dataset includes various economic indicators such as mortgage rates, consumer sentiment, inflation rates, housing supply, and stock market performance.
-                        The machine learning model used for prediction is a RandomTreeClassifier, which has shown an accuracy rate of 71%. Backtesting techniques are applied to validate the model and assess its performance.
-                        Backtesting involves testing the model on historical data to evaluate how well it would have performed in the past.
-                        By analyzing these economic factors and using machine learning techniques, the project aims to provide insights into real estate market trends and assist in making informed decisions for buying or selling properties.
+                    <span class="image"><img src="images/cars.jpeg" alt="" /></span>
+                    <h3>Customer Churn Prediction & CLV Analysis with Python</h3>
+                    <p>In this project, I analyzed an Auto Insurance dataset to predict Customer Churn and estimate Customer Lifetime Value (CLV). For churn prediction, I assigned weighted scores to key variables such as account age, open complaints, premium cost, and more. 
+			    Customers crossing certain thresholds received points, with higher scores indicating a greater likelihood of churn. Some factors, like open complaints, carried more weight than others. Using these churn scores, I then estimated customer lifespans, alongside other variables such as  
+			    monthly premiums, and profit margins to calculate CLV. 
                     </p>
-                    Python Code - <a href='https://github.com/nbran3/Portfolio/blob/main/FinancePython/ForecastingHousePrices.ipynb'>GitHub Link</a>
+                    Python Code - <a href='https://github.com/nbran3/Portfolio/tree/main/MarketingAnalytics/CLV'>GitHub Link</a>
                 </li>
                 <li>
-                    <span class="image"><img src="images/postgres-official-docker-image-900x600-1.png" alt="" /></span>
-                    <h3>Local Database Creation and Data Ingestion via Docker Project</h3>
+                    <span class="image"><img src="images/EMA.jpg" alt="" /></span>
+                    <h3>Stock Market Data ETL Project</h3>
                     <p>
-                        Established a fully functional PostgreSQL database on
-			a local Docker container and successfully ingested and processed a dataset (CSV via API) with over a million data points
-			using Python scripts (Pandas and SQLAlchemy libraries) within the Docker environment
+                      In this project I used the yfinance (Yahoo finance) python library to download 73 different companies' stock data dating back to January 2015. I then created 5 pandas dataframes for each variable of data (Closing pricc, low price etc), and then used the pandas_gbq Python library 
+			    to ingest the data into a BigQuery database. THe script can be enabled to run weekdays during after-market hours to retrieve new data.  
                     </p>
-                    Project Folder - <a href="https://github.com/nbran3/Portfolio/tree/main/DataEngineering/LocalDockerDataIngestionExample">GitHub Link</a>
+                    Project Folder - <a href="https://github.com/nbran3/Portfolio/tree/main/DataEngineering/StockMarketPipeline">GitHub Link</a>
                 </li>
                 <li>
                     <span class="image"><img src="images/Screenshot 2024-03-06 203010.png" alt="" /></span>
@@ -113,6 +109,22 @@ as those are the areas in which I feel most confident and adept.
                 </header>
                 <ul class="features">
                     <li>
+                        <span class="image"><img src="images/download.jpg" alt="" /></span>
+                        <h3>dbt Data Transformation and Ingestion to GCP Project</h3>
+                        <p>In this project, I ingested over 150 million rows of raw NYC Taxi data into BigQuery using the pandas-gbq Python library. I then connected my BigQuery database to dbt (Data build tool), to unify and transform the data and create models for more efficient querying in BigQuery.
+                        Python Code - <a href='https://github.com/nbran3/Portfolio/tree/main/Econometrics/GDPForecasting'>GitHub Link</a>
+                    </li>
+                      <li>
+                    <span class="image"><img src="images/postgres-official-docker-image-900x600-1.png" alt="" /></span>
+                    <h3>Local Database Creation and Data Ingestion via Docker Project</h3>
+                    <p>
+                        Established a fully functional PostgreSQL database on
+			a local Docker container and successfully ingested and processed a dataset (CSV via API) with over a million data points
+			using Python scripts (Pandas and SQLAlchemy libraries) within the Docker environment
+                    </p>
+                    Project Folder - <a href="https://github.com/nbran3/Portfolio/tree/main/DataEngineering/LocalDockerDataIngestionExample">GitHub Link</a>
+                </li>
+                  <li>
                         <span class="image"><img src="images/ameirca.jpg" alt="" /></span>
                         <h3>GDP API Web Scraping and Predictive Modeling</h3>
                         <p>In this project, I connected to the Bureau of Economic Analysis API to scrape the GDP data for each state. I collected GDP information from the years 1998, 2002, 2007, 2012, 2017, and 2022. Using this data,
@@ -121,27 +133,6 @@ as those are the areas in which I feel most confident and adept.
                             found in the README file.
                         </p>
                         Python Code - <a href='https://github.com/nbran3/Portfolio/tree/main/Econometrics/GDPForecasting'>GitHub Link</a>
-                    </li>
-                    <li>
-                    <span class="image"><img src="images/cars.jpeg" alt="" /></span>
-                    <h3>Automotive Data Analysis and Insights Project</h3>
-                    <p>
-                        Conducted SQL (T-SQL) queries on an
-                        automotive dataset from Kaggle, utilizing advanced techniques (joins, CTEs, window functions, aggregations) to identify
-                        countries, manufacturers, and top models. Extracted key insights, such as average prices and
-                        mileage by category. Presented findings in an interactive Tableau dashboard
-                    </p>
-                    SQL Queries - <a href='https://github.com/nbran3/Portfolio/tree/main/SQL/StoreSales'>GitHub Link</a> Tableau Public - <a href="https://public.tableau.com/app/profile/noah.brannon/viz/CarProject_16983307515460/CarCountbyCountry">Link</a>
-                </li>
-                    <li>
-                        <span class="image"><img src="images/Econ.png" alt="" /></span>
-                        <h3>Economic Indicators Statistical Analysis</h3>
-                        <p>The project explores the relationships between the Consumer Price Index (CPI), the Unemployment Rate, and the Federal Funds Rate (FFR) in the United States from 1960 to 2022. It was entirely done within R, including the analysis,
-                            explanations, and graphs. Its main objectives include examining the validity of the
-                            Phillips Curve theory, analyzing the relationship between CPI and the FFR in the context of the Federal Reserve's efforts to control inflation, and exploring the correlations between CPI, Unemployment Rate, and FFR
-                            using statistical analysis techniques. The project presents various visualizations, summary statistics, correlation plots, and linear regression models to illustrate the findings. All data was obtained from the Federal Reserve Bank of St Louis (FRED).
-                        </p>
-                        R Code - <a href='https://github.com/nbran3/Portfolio/tree/main/Econometrics/EconomicIndicators'>GitHub Link</a>
                     </li>
                 </ul>
                 </section>
