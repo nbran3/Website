@@ -87,8 +87,8 @@
                     <span class="image"><img src="images/EMA.jpg" alt="" /></span>
                     <h3>Stock Market Data ETL Project</h3>
                     <p>
-                      In this project I used the yfinance (Yahoo finance) python library to download 73 different companies' stock data dating back to January 2015. I then created 5 pandas dataframes for each variable of data (Closing pricc, low price etc), and then used the pandas_gbq Python library 
-			    to ingest the data into a BigQuery database. THe script can be enabled to run weekdays during after-market hours to retrieve new data.  
+                      In this project, I used the yfinance (Yahoo finance) python library to download 73 different companies' stock data dating back to January 2015. I then created 5 pandas dataframes for each variable of data (Closing price, low price, etc), and then used the pandas_gbq Python library 
+			    to ingest the data into a BigQuery database. The script can be enabled to run weekdays during after-market hours to retrieve new data.  
                     </p>
                     Project Folder - <a href="https://github.com/nbran3/Portfolio/tree/main/DataEngineering/StockMarketPipeline">GitHub Link</a>
                 </li>
@@ -112,7 +112,7 @@
                         <span class="image"><img src="images/download.jpg" alt="" /></span>
                         <h3>dbt Data Transformation and Ingestion to GCP Project</h3>
                         <p>In this project, I ingested over 150 million rows of raw NYC Taxi data into BigQuery using the pandas-gbq Python library. I then connected my BigQuery database to dbt (Data build tool), to unify and transform the data and create models for more efficient querying in BigQuery.
-                        Python Code - <a href='https://github.com/nbran3/Portfolio/tree/main/Econometrics/GDPForecasting'>GitHub Link</a>
+                        Python Code - <a href='https://github.com/nbran3/DEZoomcamp/tree/nbran3-patch-1/Week4/taxi_rides_nyc'>GitHub Link</a>
                     </li>
                       <li>
                     <span class="image"><img src="images/postgres-official-docker-image-900x600-1.png" alt="" /></span>
@@ -148,7 +148,7 @@
 				Airbnb listings in New York City for the years 2019-2020. Through this analysis, I computed average prices and occupancy
 				days for each neighborhood and created two metrics - price-to-occupancy and price-to-review ratios. Furthermore, I
 				conducted a comprehensive examination of overall metrics for NYC Airbnbs, identifying high-ratio listings and exploring
-				borough averages. I then created three interactive Tableau dashboards for the price, price-to-occupancy and price-to-review metrics
+				borough averages. I then created three interactive Tableau dashboards for the price, price-to-occupancy, and price-to-review metrics
                         </p>
                         SQL Syntax - <a href='https://github.com/nbran3/Portfolio/blob/main/SQL/NYCAirbnb/NYCairbnb.sql'>GitHub Link</a> Tableau - <a href='https://public.tableau.com/app/profile/noah.brannon/viz/NYCairbnb_16872016479050/Price'> Tableau Link </a>
                     </li>
@@ -157,7 +157,7 @@
                     <h3>Wikipedia Python Web Scraping ETL to SQL Project</h3>
                     <p>
                         Web Scrapped the top 50 worldwide manufacturers by revenue in 2021 and top 100 for 2020 off of Wikipedia using the BeatifulSoup library. Extracted the data into pandas dataframes and 
-			then transformed the data into CSV files to be uploaded into SQL Server using SQLAlchemy. Create tables and database schema within Python using SQLAlchemy as well.   
+			Then, the data was transformed into CSV files to be uploaded to the SQL Server using SQLAlchemy. Create tables and database schema within Python using SQLAlchemy as well.   
                     </p>
                     Python Code - <a href='https://github.com/nbran3/Portfolio/blob/main/DataEngineering/WebScraptoPython.ipynb'>GitHub Link</a>
                 </li>
@@ -178,35 +178,6 @@
                     </header>
                     <ul class="features">
                         <!-- Your project descriptions here -->
-                        <li>
-                            <span class="image"><img src="images/EMA.jpg" alt="" /></span>
-                            <h3>Financial Data ETL and Automation Project</h3>
-                            <p> Built a Python script using the yfinance library to
-                                retrieve and transform daily stock data (open, close, high, low) for 18 companies from 2000 to
-                                the present (approx. 103,000 data points). Developed an SQL Server database for efficient querying and
-                                analysis, uploading data into SQL via Python, and enabling continuous updates with a daily
-                                refresh at 4:15 PM EST for real-time insights.</p>
-                            Python Code - <a href='https://github.com/nbran3/Portfolio/blob/main/DataEngineering/PythontoSql.ipynb'>GitHub Link</a>
-                        </li>
-                        <li>
-                            <span class="image"><img src="images/sp500.jpg" alt="" /></span>
-                            <h3>S&P 500 Predictive Modeling</h3>
-                            <p>This project showcases a predictive model for the S&P 500 index using machine learning techniques. The model is trained on historical data from 2010 to 2022 and achieves a 57% prediction accuracy for this year's index values.
-                                By leveraging the RandomForestClassifier algorithm, the model predicts whether the S&P 500 index will increase or decrease based on closing price, volume, open, high, and low features. Backtesting and precision scores
-                                evaluate the model's performance, while the use of rolling averages and trend indicators enhances prediction accuracy</p>
-                            Python Code - <a href='https://github.com/nbran3/Portfolio/tree/main/FinancePython/SP500%20Predictions'>GitHub Link</a>
-                        </li>
-                        <li>
-                            <span class="image"><img src="images/store.jpg" alt="" /></span>
-                            <h3>Store Sales SQL and Tableau Project </h3>
-                            <p>
-                                This SQL project focuses on analyzing a hypothetical Store Sales dataset I got from Kaggle. I created new columns such as revenue, profit margin, and discounted price difference based on existing columns such as profit, quantity, etc.
-                                The project calculates various metrics such as average sales, total sales, total revenue, average discount, total quantity, and average order duration per region (East, Central, etc.) and state. It also examines the most common shipping method,
-                                popular category purchases, and profitability by category and state. Additionally, it identifies customers with the highest sales, profits, and profit margins.
-                                Visualizations of the analysis are available in Tableau.
-                            </p>
-                            SQL Queries - <a href='https://github.com/nbran3/Portfolio/tree/main/SQL/StoreSales'>GitHub Link</a> Tableau Public <a href="https://public.tableau.com/app/profile/noah.brannon/viz/StoreSales_16879837384680/PRMAP">Link</a>
-                        </li>
                         <li>
                             <span class="image"><img src="images/SQL.png" alt="" /></span>
                             <h3>SQL Projects</h3>
